@@ -1,6 +1,11 @@
+/*------------------------------
+=BASIC SETUP
+------------------------------*/
+
 * {
     margin: 0;
     padding: 0;
+	box-sizing: border-box; /* Para un mejor control del espaciado */
 }
 
 header, footer, section,div, aside, nav, article {
@@ -10,19 +15,28 @@ header, footer, section,div, aside, nav, article {
 body {
 	margin: 0 auto; 
 	padding: 22px 0;
-	width: 940px;
+	width: 1080px;
 	font: 13px/22px;
 	/*font: 13px/22px Helvetica, Arial, sans-serif;*/
 	background: #f0f0f0;
 
 }
 
-h1, h2 {
-	font-family: 'Qwitcher';
-	font-weight: bold;
-    font-size: 50px;
-    line-height: 44px;
-    padding: 22px 0;
+h1{
+	color: #09440e;
+    font-size: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 100%; /* Ocupa todo el ancho */
+	text-align: justify;
+    padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+h2 {
+    color: #3f8fda;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+	margin-bottom: 20px;
 }
 
 h3 {
@@ -36,3 +50,126 @@ h3 {
 p {
 	padding-bottom: 22px;
 }
+
+/*------------------------------
+=BANNER
+------------------------------*/
+/* Estilos para el contenedor del banner */
+#banner-rigth {
+    display: flex;
+	align-items: flex-start; /* Alinea los elementos al inicio */
+}
+
+/* Estilo para el logo */
+#banner-rigth img {
+	height: 100px; /* Ajustar el tamaño según sea necesario */
+    margin-right: 10px;
+}
+
+/* Contenedor derecho que agrupa credenciales y navegación */
+#right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+	padding: 20px;
+}
+
+/* Contenedor de las credenciales */
+#credentials {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px; /* Espacio entre las credenciales y la navegación */
+}
+
+/* Botones de log in y sign up */
+#logIn, #singUp {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    padding: 5px;
+}
+/*------------------------------
+=NAVIGATION
+------------------------------*/
+ul{
+	list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    background-color: #e0e0e0; /* Color de fondo de los botones de navegación */
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #333;
+    font-size: 25px;
+}
+
+/*------------------------------
+=NAVIGATION main
+------------------------------*/
+
+hr{
+	border: 1px solid #e0e0e0; 
+	width: 100%; 
+	margin-bottom: 20px;
+}
+
+#top-content-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding:  10px;
+	margin: 0px;
+}
+
+#carts-menu ul{
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	background: url("../multimedia/img/tabs-arrow.png");
+}
+
+#carts-menu ul li a {
+	background-color: #e0e0e0; /* Color de fondo de los botones de navegación */
+    padding: 5px 10px;
+    border-radius:10px 10px 0px 0px;
+    color: #333;
+    font-size: 15px;
+}
+
+
+/*------------------------------
+=MAIN
+------------------------------*/
+main{
+	display: flex;
+}
+#content-main{
+	margin: 30px;
+}
+
+.program {
+	text-align: justify;
+	flex-direction: row;
+}
+/*------------------------------
+=SIDEBAR
+------------------------------*/
+
+
+
+/*------------------------------
+=FOOTER
+------------------------------*/
